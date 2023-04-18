@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+
+    <p>Você também pode acessar o meu <a href="https://sites.google.com/d/1Jrfes_VVBQafReRVZME2lpRJtFcsm0JK/p/1VdEspU8tWQSIZGxD639VhwtfVBbdP70V/edit" target="_blank" rel="external">projeto de video game</a>
+    <br>
+    <br>
+    A utilização o parametro "target blank" mantém a pagina anterior ao abrir um link.
+    O parametro "rel" indica ao navegador qual o tipo do site do link (no caso é um tipo externo[external])
+    Normalmente, deve ser usando em sites externos, isto é, que pertençam a outras pessoas 
+    
+    </p>
+
+    <p> Você também pode me visitar no <a href="https://www.reddit.com/user/female_templar" target="_blank" rel="next" hreflang="pt-br">reddit</a>
+    <br>
+    <br>
+    O parametro hreflang permite indicar qual é o idioma principal do site para onde o link ira, isso avisa ao navegador como lidar caso o visitante queira traduzir 
+    </p>
+
+    <h2>Usando links internos</h2>
+    <p>Você pode acessar o minha nova <a href="paginadois.html" target="_self" rel="next">pagina</a>
+        <br>
+        <br>
+        A tag a (âncora) gera links para locais externos, por padrão(a "target self" para indicar que perternce ao mesmo site e o "rel next" indica que o link é para a proxima parte do documento atual), começam uma navegação nova em outra pagina (sobrepondo uma nova pagina no mesmo lugar)
+          
+        </p>
+
+        <p> Você também pode acessar nossas <a href="noticias/pag003.html" target="_self" rel="next">paginas de noticias</a>
+            
+        </p>
+
+        <h1>Links para Download</h1>
+        <p>Aqui está o link para download em formato pdf do arquivo: Ligações em toda parte
+
+        <ul>
+            <li><a href="livros/linkslivro.pdf" download="linkslivro.pdf" type="application/pdf">Baixar pdf</a></li>
+
+            <li><a href="livros/texto-base.zip" download="texto-base.zip" type="application/zip"> Baixar em formato Zip</a></li>
+        </ul>  
+        <br>
+        Observação: o download link do pdf não funciona, pois o pdf é reconhecido pelo proprio navegador (possue uma opção de download no pdf aberto no navedor)
+        </p>
+</body>
+</html>
